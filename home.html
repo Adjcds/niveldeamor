@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nível de Amor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="love-calculator">
+        <h1>Calculadora de Amor</h1>
+        <p>Em uma escala de 0 a 10, quanto você me ama?</p>
+        <input type="number" id="loveLevel" min="0" max="1000000000">
+        <br>
+        <br>
+        <button onclick="calcularAmor()">Calcular</button>
+        <p id="mensagem"></p>
+    </div>
+
+    <script>
+        function calcularAmor() {
+            const loveLevel = parseInt(document.getElementById("loveLevel").value);
+            if (loveLevel === 0 || loveLevel === 10) {
+                document.getElementById("mensagem").textContent = "Só isso? Ela te ama muito mais!";
+            } else if (loveLevel >= 1 && loveLevel <= 50) {
+                document.getElementById("mensagem").textContent = "Você sabe que eu te amo muito mais. Não é mesmo?";
+            } else if (loveLevel >= 51 && loveLevel <= 999999999) {
+                document.getElementById("mensagem").textContent = "Vamos, sabemos a referência que você precisa entender.";
+            } else if (loveLevel === 1000000000) {
+                document.getElementById("mensagem").textContent = "Eu te amo mil milhões também❤️";
+            } else if (loveLevel > 1000000000) {
+                document.getElementById("mensagem").textContent = "Tbm te amo muitão❤️❤️❤️❤️❤️❤️";
+            } else {
+                document.getElementById("mensagem").textContent = "É sério?";
+            }
+        }
+    </script>
+</body>
+</html>
