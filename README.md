@@ -1,4 +1,4 @@
-# Calculadora do Amor ❤️
+# [Calculadora do Amor ❤️](https://adjcds.github.io/niveldeamor/home.html)
 
 Este é um projeto simples e divertido para testar minhas habilidades em HTML, CSS e JavaScript. O "Nível do Amor" é uma brincadeira que permite calcular o nível de amor em uma escala de 0 a 10. Dependendo do valor inserido, a calculadora exibirá mensagens descontraídas e carinhosas.
 
